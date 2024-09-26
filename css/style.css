@@ -469,6 +469,114 @@ footer .text span a:hover {
   display: none;
 }
 
+footer {
+  background-color: #0a2040;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-info,
+.footer-links,
+.footer-social,
+.footer-newsletter {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3,
+.footer-newsletter h3 {
+  /* border-bottom: 1px solid #fff; */
+  padding-bottom: 12px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #466f9e;
+  margin: 10px 30px;
+}
+
+.footer-newsletter input[type="email"] {
+  padding: 9px;
+  border: 2px solid #f9fafa;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.footer-newsletter input[type="email"]:focus {
+  border-color: #bac0df;
+  outline: none;
+}
+
+/* Source: https://getcssscan.com/css-buttons-examples */
+.button-62 {
+  background: linear-gradient(to bottom right, #466f9e, #bac0df);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #0a2040,
+    0.125rem 0.125rem 1rem #466f9e;
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #0a2040,
+    0.125rem 0.125rem 1rem #466f9e;
+}
+
 /* Responsive Media Query */
 @media (max-width: 1190px) {
   section .content {
