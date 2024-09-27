@@ -135,7 +135,7 @@ nav.sticky .menu-btn {
   height: 100vh;
   width: 100%;
   /* background: url("images/background.png") no-repeat; */
-  background-color: #bac0df;
+  background-color: #f9fafa;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -199,6 +199,7 @@ nav.sticky .menu-btn {
 }
 
 /* About Section Styling */
+
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
@@ -247,6 +248,14 @@ section .title span::after {
   width: 70%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.about{
+  background-color: #bac0df;
+}
+.about .content{
+  margin-bottom: 0px;
+  padding-bottom: 40px;
 }
 
 .about .about-details .left {
@@ -308,6 +317,57 @@ section .button button:hover {
   padding: 40px 0;
 }
 
+.skills .softskills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.softskills-details .boxes {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  display: flex;
+
+}
+
+.softskills-details .boxes .box {
+  flex-direction: column;
+  align-items: center;
+object-fit: cover;
+  display: flex;
+  max-height: 100px;
+}
+
+
+.softskills-details .per {
+  display: flex;              /* Flexbox for centering */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  width: 120px;               /* Uniform container size */
+  height: 120px;              /* Uniform container size */
+  overflow: hidden;           /* Hide overflow */
+  background-color: white;    /* Optional: background color */
+  border-radius: 8px;         /* Optional: rounded corners */
+  margin: 10px;         /* Optional: Add rounded corners */
+}
+
+.skill-image {
+  width: auto;                /* Adjust based on aspect ratio */
+  height: 70%;                /* Make all images take up 80% of container height */
+  object-fit: contain;        /* Maintain aspect ratio */
+  padding: 5px;               /* Padding to balance smaller images */
+}
+
+.skill-image-small {
+  width: auto;                
+  height: 100%;                
+  object-fit: cover;       
+}
+
+
 .skills .skills-details {
   display: flex;
   justify-content: space-between;
@@ -322,6 +382,7 @@ section .button button:hover {
   color: #0e2431;
   text-align: justify;
 }
+
 
 .skills .skills-details .experience {
   display: flex;
@@ -479,9 +540,9 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 0 50px;
   text-align: left;
 }
 
@@ -517,7 +578,7 @@ footer {
 }
 
 .footer-social a {
-  margin-right: 10px;
+  margin-right: 30px;
   color: white;
   font-size: 20px;
 }
