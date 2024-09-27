@@ -1,5 +1,5 @@
 /* Google Font CDN Link */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* Custom Scroll Bar CSS */
@@ -250,10 +251,10 @@ section .title span::after {
   transform: translateX(-50%);
 }
 
-.about{
+.about {
   background-color: #bac0df;
 }
-.about .content{
+.about .content {
   margin-bottom: 0px;
   padding-bottom: 40px;
 }
@@ -324,49 +325,45 @@ section .button button:hover {
   flex-direction: column;
 }
 
-
 .softskills-details .boxes {
   justify-content: space-around;
   align-items: center;
   width: 100%;
   display: flex;
-
 }
 
 .softskills-details .boxes .box {
   flex-direction: column;
   align-items: center;
-object-fit: cover;
+  object-fit: cover;
   display: flex;
   max-height: 100px;
 }
 
-
 .softskills-details .per {
-  display: flex;              /* Flexbox for centering */
-  justify-content: center;    /* Center horizontally */
-  align-items: center;        /* Center vertically */
-  width: 120px;               /* Uniform container size */
-  height: 120px;              /* Uniform container size */
-  overflow: hidden;           /* Hide overflow */
-  background-color: white;    /* Optional: background color */
-  border-radius: 8px;         /* Optional: rounded corners */
-  margin: 10px;         /* Optional: Add rounded corners */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 120px; /* Uniform container size */
+  height: 120px; /* Uniform container size */
+  overflow: hidden; /* Hide overflow */
+  background-color: white; /* Optional: background color */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin: 10px; /* Optional: Add rounded corners */
 }
 
 .skill-image {
-  width: auto;                /* Adjust based on aspect ratio */
-  height: 70%;                /* Make all images take up 80% of container height */
-  object-fit: contain;        /* Maintain aspect ratio */
-  padding: 5px;               /* Padding to balance smaller images */
+  width: auto; /* Adjust based on aspect ratio */
+  height: 70%; /* Make all images take up 80% of container height */
+  object-fit: contain; /* Maintain aspect ratio */
+  padding: 5px; /* Padding to balance smaller images */
 }
 
 .skill-image-small {
-  width: auto;                
-  height: 100%;                
-  object-fit: cover;       
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 .skills .skills-details {
   display: flex;
@@ -382,7 +379,6 @@ object-fit: cover;
   color: #0e2431;
   text-align: justify;
 }
-
 
 .skills .skills-details .experience {
   display: flex;
@@ -485,6 +481,7 @@ object-fit: cover;
 .contact .content {
   margin: 0 auto;
   padding: 30px 0;
+  margin-top: 50px;
 }
 
 .contact .text {
@@ -593,7 +590,7 @@ footer {
 .footer-newsletter input[type="email"] {
   padding: 9px;
   border: 2px solid #f9fafa;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: border-color 0.3s;
   font-size: 16px;
   box-sizing: border-box;
@@ -608,7 +605,7 @@ footer {
 .button-62 {
   background: linear-gradient(to bottom right, #466f9e, #bac0df);
   border: 0;
-  border-radius: 12px;
+  border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -636,6 +633,205 @@ footer {
 .button-62:not([disabled]):hover {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #0a2040,
     0.125rem 0.125rem 1rem #466f9e;
+}
+
+/* body {
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 0 50px 0;
+}
+.contact-form .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-form .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.contact-form .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.contact-form .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.contact-form .left-side .details i {
+  font-size: 30px;
+  color: #466f9e;
+  margin-bottom: 10px;
+}
+.contact-form .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-form .left-side .details .text-one,
+.contact-form .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+.contact-form .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.contact-form .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #466f9e;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #466f9e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+/* figure css */
+figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+figure > * {
+  grid-area: 1/1;
+  transition: 0.4s;
+}
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: 0.75rem;
+  background: var(--c, #0009);
+  clip-path: inset(0 var(--_i, 100%) 0 0);
+  -webkit-mask: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-clip: text, padding-box;
+  margin: -1px;
+}
+figure:hover figcaption {
+  --_i: 0%;
+}
+figure:hover img {
+  transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+  figure figcaption {
+    -webkit-mask: none;
+    color: #fff;
+  }
+}
+
+.figure-container {
+  margin: 0;
+  min-height: 93vh;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* Responsive Media Query */
