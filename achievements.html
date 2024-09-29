@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+
+    <!-- fancybox -->
+    <script src="files/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="files/fancybox/fancybox.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -22,14 +27,40 @@
       <div class="navbar">
         <div class="logo"><a href="#">DWD</a></div>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="internship.html">Internship</a></li>
-          <li><a href="achievements.html" class="active">Achievements</a></li>
-          <li><a href="culture.html">Culture</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="index.html"> <i class="fa fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="skills.html"> <i class="fas fa-lightbulb"></i> Skills</a>
+          </li>
+          <li>
+            <a href="experience.html"
+              ><i class="fa-regular fa-star"></i> Experience</a
+            >
+          </li>
+          <li>
+            <a href="internship.html">
+              <i class="fa-regular fa-id-badge"></i> Internship</a
+            >
+          </li>
+          <li>
+            <a href="achievements.html" class="active"
+              ><i class="fa fa-trophy" aria-hidden="true"></i> Achievements</a
+            >
+          </li>
+          <li>
+            <a href="culture.html"><i class="fa-solid fa-users"></i> Culture</a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <i class="fa-regular fa-image"></i> Gallery</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-regular fa-message"></i> Contact</a
+            >
+          </li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
@@ -45,64 +76,82 @@
         <div class="content">
           <div class="title"><span>My Achievements</span></div>
           <div class="boxes">
-            <div class="box">
-              <div class="icon">
-                <i class="fas fa-desktop"></i>
-              </div>
-              <div class="topic">Web Devlopment</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
-              </p>
+            <div class="box" style="cursor: pointer">
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/aws_certified_data_analytics.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fas fa-desktop"></i>
+                </div>
+
+                <div class="topic">AWS Certified Data Analytics</div>
+                <p>
+                  Through this certification, I learned how to effectively
+                  utilize AWS services to build and optimize data analytics
+                  solutions, enhancing my ability to extract actionable insights
+                  from complex datasets.
+                </p>
+              </a>
             </div>
+
             <div class="box">
               <div class="icon">
                 <i class="fas fa-paint-brush"></i>
               </div>
-              <div class="topic">Graphic Design</div>
+              <div class="topic">Google Cloud Professional Data Engineer</div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
+                This certification taught me how to design and manage scalable
+                data processing systems on Google Cloud, focusing on data
+                modeling, pipeline development, and ensuring data integrity for
+                informed decision-making.
               </p>
             </div>
             <div class="box">
               <div class="icon">
                 <i class="fas fa-chart-line"></i>
               </div>
-              <div class="topic">Digital Marketing</div>
+              <div class="topic">Data Science Excellence Award</div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
+                Recognized for outstanding performance in data analysis and
+                innovative project work during the Data Science Capstone
+                Program, focusing on predictive analytics for healthcare.
               </p>
             </div>
             <div class="box">
               <div class="icon">
                 <i class="fab fa-android"></i>
               </div>
-              <div class="topic">Icon Design</div>
+              <div class="topic">Outstanding Intern Award</div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
+                Acknowledged for exemplary performance during the internship,
+                including successful completion of a significant data migration
+                project that streamlined data access for the analytics team.
               </p>
             </div>
             <div class="box">
               <div class="icon">
                 <i class="fas fa-camera-retro"></i>
               </div>
-              <div class="topic">Photography</div>
+              <div class="topic">
+                Data Science and Machine Learning Bootcamp
+              </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
+                Completed an intensive bootcamp focusing on data science
+                methodologies and machine learning algorithms.
               </p>
             </div>
             <div class="box">
               <div class="icon">
                 <i class="fas fa-tablet-alt"></i>
               </div>
-              <div class="topic">Apps Devlopment</div>
+              <div class="topic">
+                AWS Certified Solutions Architect – Associate
+              </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia autem quam odio, qui voluptatem eligendi?
+                Earned certification for demonstrating knowledge of designing
+                distributed systems on AWS.
               </p>
             </div>
           </div>
@@ -157,5 +206,10 @@
     <!-- Add an overlay for transition -->
     <div id="transition-overlay"></div>
     <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9a414a22dd.js"
+      crossorigin="anonymous"
+    ></script>
+    ;
   </body>
 </html>
