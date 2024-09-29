@@ -372,7 +372,6 @@ section .button button:hover {
 .skills .skills-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .skills-details .text {
@@ -439,13 +438,14 @@ section .button button:hover {
   border-radius: 12px;
   padding: 30px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  cursor: default;
+  cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .services .boxes .box:hover {
-  background: #0a2040;
   color: #fff;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .services .boxes .box .icon {
@@ -887,6 +887,26 @@ figure:hover img {
   background-color: #0a2040;
   box-shadow: 0px 0px 10px 2px rgb(0, 119, 255);
 }
+
+/* culture page */
+.culture .details {
+  display: flex;
+  text-align: justify;
+}
+
+.culture .details .text {
+  padding: 20px;
+}
+
+.culture img {
+  height: 300px;
+  border-radius: 5px;
+}
+
+.video-container {
+  padding-top: 30px;
+}
+
 @media (max-width: 300px) {
   .timeline {
     width: 100%;
@@ -1022,7 +1042,6 @@ figure:hover img {
   }
 
   .skills .skills-details {
-    align-items: center;
     justify-content: center;
     flex-direction: column;
   }

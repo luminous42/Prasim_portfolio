@@ -14,6 +14,14 @@
     <script src="files/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="files/fancybox/fancybox.css" />
 
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -76,7 +84,10 @@
         <div class="content">
           <div class="title"><span>My Achievements</span></div>
           <div class="boxes">
-            <div class="box" style="cursor: pointer">
+            <div
+              class="box"
+              data-background="images/certifications/aws_certified_data_analytics.png"
+            >
               <a
                 data-fancybox="gallery"
                 data-src="images/certifications/aws_certified_data_analytics.png"
@@ -96,63 +107,106 @@
               </a>
             </div>
 
-            <div class="box">
-              <div class="icon">
-                <i class="fas fa-paint-brush"></i>
-              </div>
-              <div class="topic">Google Cloud Professional Data Engineer</div>
-              <p>
-                This certification taught me how to design and manage scalable
-                data processing systems on Google Cloud, focusing on data
-                modeling, pipeline development, and ensuring data integrity for
-                informed decision-making.
-              </p>
+            <div
+              class="box"
+              data-background="images/certifications/gcp-engineer.png"
+            >
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/gcp-engineer.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="topic">Google Cloud Professional Data Engineer</div>
+                <p>
+                  This certification taught me how to design and manage scalable
+                  data processing systems on Google Cloud, focusing on data
+                  modeling, pipeline development, and ensuring data integrity
+                  for informed decision-making.
+                </p>
+              </a>
             </div>
-            <div class="box">
-              <div class="icon">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div class="topic">Data Science Excellence Award</div>
-              <p>
-                Recognized for outstanding performance in data analysis and
-                innovative project work during the Data Science Capstone
-                Program, focusing on predictive analytics for healthcare.
-              </p>
+            <div
+              class="box"
+              data-background="images/certifications/datascience.png"
+            >
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/datascience.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="topic">Data Science Excellence Award</div>
+                <p>
+                  Recognized for outstanding performance in data analysis and
+                  innovative project work during the Data Science Capstone
+                  Program, focusing on predictive analytics for healthcare.
+                </p>
+              </a>
             </div>
-            <div class="box">
-              <div class="icon">
-                <i class="fab fa-android"></i>
-              </div>
-              <div class="topic">Outstanding Intern Award</div>
-              <p>
-                Acknowledged for exemplary performance during the internship,
-                including successful completion of a significant data migration
-                project that streamlined data access for the analytics team.
-              </p>
+            <div class="box" data-background="images/certifications/intern.png">
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/intern.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fab fa-android"></i>
+                </div>
+                <div class="topic">Outstanding Intern Award</div>
+                <p>
+                  Acknowledged for exemplary performance during the internship,
+                  including successful completion of a significant data
+                  migration project that streamlined data access for the
+                  analytics team.
+                </p>
+              </a>
             </div>
-            <div class="box">
-              <div class="icon">
-                <i class="fas fa-camera-retro"></i>
-              </div>
-              <div class="topic">
-                Data Science and Machine Learning Bootcamp
-              </div>
-              <p>
-                Completed an intensive bootcamp focusing on data science
-                methodologies and machine learning algorithms.
-              </p>
+            <div
+              class="box"
+              data-background="images/certifications/bootcamp.png"
+            >
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/bootcamp.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fas fa-camera-retro"></i>
+                </div>
+                <div class="topic">
+                  Data Science and Machine Learning Bootcamp
+                </div>
+                <p>
+                  Completed an intensive bootcamp focusing on data science
+                  methodologies and machine learning algorithms.
+                </p>
+              </a>
             </div>
-            <div class="box">
-              <div class="icon">
-                <i class="fas fa-tablet-alt"></i>
-              </div>
-              <div class="topic">
-                AWS Certified Solutions Architect – Associate
-              </div>
-              <p>
-                Earned certification for demonstrating knowledge of designing
-                distributed systems on AWS.
-              </p>
+            <div
+              class="box"
+              data-background="images/certifications/solutionarchitect.png"
+            >
+              <a
+                data-fancybox="gallery"
+                data-src="images/certifications/solutionarchitect.png"
+                data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+                <div class="icon">
+                  <i class="fas fa-tablet-alt"></i>
+                </div>
+                <div class="topic">
+                  AWS Certified Solutions Architect – Associate
+                </div>
+                <p>
+                  Earned certification for demonstrating knowledge of designing
+                  distributed systems on AWS.
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -210,6 +264,22 @@
       src="https://kit.fontawesome.com/9a414a22dd.js"
       crossorigin="anonymous"
     ></script>
-    ;
+    <script>
+      $(document).ready(function () {
+        $(".box").hover(
+          function () {
+            var backgroundImage = $(this).data("background");
+            $(this).css("background-image", "url(" + backgroundImage + ")");
+            $(this).css("background-size", "cover");
+
+            $(this).find(".icon, .topic, p").css("opacity", "0");
+          },
+          function () {
+            $(this).css("background-image", "none");
+            $(this).find(".icon, .topic, p").css("opacity", "1");
+          }
+        );
+      });
+    </script>
   </body>
 </html>
