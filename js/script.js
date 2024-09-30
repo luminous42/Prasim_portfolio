@@ -1,9 +1,5 @@
 // Sticky Navigation Menu
 
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
-
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 

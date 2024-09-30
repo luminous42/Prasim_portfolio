@@ -4,15 +4,30 @@
     <meta charset="UTF-8" />
     <title>Prasim's Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Fontawesome CDN Link -->
+
+    <!-- favicon -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
     />
 
-    <!-- fancybox -->
-    <script src="files/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="files/fancybox/fancybox.css" />
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="files/fancybox/fancybox.css" />
+<script src="files/fancybox/fancybox.umd.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -70,69 +85,71 @@
         <i class="fas fa-bars"></i>
       </div>
     </nav>
-    <section class="gallery" style="height: 93vh">
+    <section class="gallery" >
       <div class="content">
         <div class="title"><span>Gallery</span></div>
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1600x1200">
-          <img
-            src="https://lipsum.app/id/2/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
-          <img
-            src="https://lipsum.app/id/3/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
-          <img
-            src="https://lipsum.app/id/4/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-                <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1600x1200"></a>
-          <img
-            src="https://lipsum.app/id/2/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
-          <img
-            src="https://lipsum.app/id/3/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-
-        <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
-          <img
-            src="https://lipsum.app/id/4/200x150"
-            width="200"
-            height="150"
-            alt=""
-          />
-        </a>
-      </div>
+        <div class="gallery-grid">
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/salespipeline.png">
+                    <img src="images/gallery/salespipeline.png" width="200" height="150" alt="Sales Data Pipeline" />
+                </a>
+                <h3>Sales Data Pipeline</h3>
+                <p>ETL process for integrating sales data from multiple sources, improving data accessibility.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/realtimedashboard.png">
+                    <img src="images/gallery/realtimedashboard.png" width="200" height="150" alt="Real-time Analytics Dashboard" />
+                </a>
+                <h3>Real-time Analytics Dashboard</h3>
+                <p>A dashboard for monitoring user engagement metrics using Apache Kafka and Tableau.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/datawarehouse.png">
+                    <img src="images/gallery/datawarehouse.png" width="200" height="150" alt="Data Warehouse for E-commerce" />
+                </a>
+                <h3>Data Warehouse for E-commerce</h3>
+                <p>Implemented a scalable data warehouse to consolidate e-commerce data for advanced analytics.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/mlmodel.png">
+                    <img src="images/gallery/mlmodel.png" width="200" height="150" alt="ML Model for Customer Churn Prediction" />
+                </a>
+                <h3>ML Model for Customer Churn Prediction</h3>
+                <p>Developed and deployed a predictive model to identify potential customer churn, enhancing retention strategies.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/datascraper.png">
+                    <img src="images/gallery/datascraper.png" width="200" height="150" alt="Job Market Data Scraper" />
+                </a>
+                <h3>Job Market Data Scraper</h3>
+                <p>Scraped job listings to analyze market trends and provide insights for career planning.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <a data-fancybox="gallery" data-src="images/gallery/sentimentanalysis.png">
+                    <img src="images/gallery/sentimentanalysis.png" width="200" height="150" alt="Sentiment Analysis" />
+                </a>
+                <h3>Social Media Sentiment Analysis</h3>
+                <p>Analyzed social media data to gauge public sentiment on various topics using NLP techniques.</p>
+          
+            </div>
+    
+        </div>
+    </div>
+    
     </section>
-    <footer>
+     <!-- Footer Section Start -->
+     <footer>
       <div class="footer-container">
         <div class="footer-info">
-          <h3>Contact Us</h3>
-          <p>123 Main St, City, Country</p>
-          <p>Email: info@example.com</p>
+          <h3>Contact Me</h3>
+          <p>123 Main St, City, Australia</p>
+          <p>Email: info.prasimthapa@gmail.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
         <div class="footer-links">
@@ -146,21 +163,23 @@
         <div class="footer-contact">
           <div class="footer-social">
             <h3>Follow Us</h3>
-            <a href="https://facebook.com" target="_blank"
+            <a
+              href="https://www.facebook.com/profile.php?id=100009494034466"
+              target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a href="https://www.instagram.com/prasimthapa/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="https://linkedin.com" target="_blank"
+            <a href="https://linkedin.com/prasimthapa" target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/luminous42" target="_blank"
+            <a href="https://github.com/prasimthapa" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </div>
           <div class="footer-newsletter">
-            <h3>Subscribe to Our Newsletter</h3>
+            <h3>Subscribe to my Newsletter</h3>
             <form>
               <input type="email" placeholder="Your email" required />
               <button class="button-62" role="button">Subscribe</button>
@@ -169,16 +188,19 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Prasim Thapa. All rights reserved.</p>
       </div>
     </footer>
-
-    <div id="transition-overlay"></div>
     <script src="js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/9a414a22dd.js"
       crossorigin="anonymous"
     ></script>
-    ;
+
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+
+});
+    </script>
   </body>
 </html>

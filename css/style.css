@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f9fafa;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -131,7 +131,7 @@ nav.sticky .menu-btn {
   color: #fff;
 }
 
-/* home section styling */
+/* home page styling */
 .home {
   height: 100vh;
   width: 100%;
@@ -201,8 +201,6 @@ nav.sticky .menu-btn {
 
 /* About Section Styling */
 
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
   padding-top: 40px;
 }
@@ -309,14 +307,8 @@ section .button button:hover {
   color: #0a2040;
 }
 
-/* My Skills CSS */
-.skills {
-  background: #f0f8ff;
-}
 
-.skills .content {
-  padding: 40px 0;
-}
+/* skills page  */
 
 .skills .softskills-details {
   display: flex;
@@ -345,22 +337,23 @@ section .button button:hover {
 }
 
 .softskills-details .per {
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 120px; /* Uniform container size */
-  height: 120px; /* Uniform container size */
-  overflow: hidden; /* Hide overflow */
-  background-color: white; /* Optional: background color */
-  border-radius: 8px; /* Optional: rounded corners */
-  margin: 10px; /* Optional: Add rounded corners */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 120px; 
+  height: 120px;
+  overflow: hidden;
+  background-color: #f9fafa; 
+  border-radius: 8px;
+  margin: 10px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skill-image {
-  width: auto; /* Adjust based on aspect ratio */
-  height: 70%; /* Make all images take up 80% of container height */
-  object-fit: contain; /* Maintain aspect ratio */
-  padding: 5px; /* Padding to balance smaller images */
+  width: auto; 
+  height: 70%; 
+  object-fit: contain; 
+  padding: 5px; 
 }
 
 .skill-image-small {
@@ -424,7 +417,7 @@ section .button button:hover {
   color: #0a2040;
 }
 
-/* My Services CSS */
+/*  ahcievement page */
 .services .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -477,22 +470,7 @@ section .button button:hover {
   color: #fff;
 }
 
-/* Contact Me CSS */
-.contact {
-  background: #f0f8ff;
-}
 
-.contact .content {
-  margin: 0 auto;
-  padding: 30px 0;
-  margin-top: 50px;
-}
-
-.contact .text {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
 
 /* internship page */
 .internship {
@@ -663,16 +641,22 @@ footer {
     0.125rem 0.125rem 1rem #466f9e;
 }
 
-/* body {
-  min-height: 100vh;
-  width: 100%;
-  background: #c8e8e9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+/* Contact page */
+
+.contact .content {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  margin-top: 50px;
+}
+
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
 
 .contact {
+  background: #f0f8ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -733,6 +717,21 @@ footer {
   width: 75%;
   margin-left: 75px;
 }
+
+.contact-form .content .right-side  .socials{
+  display: flex;
+  padding-top: 20px;
+}
+
+.contact-form .content .right-side  .socials a {
+  width: 100%;
+  margin-left: 0;
+  color: #000;
+  font-size: 25px;
+ padding-left: 20px;
+
+}
+
 .contact-form .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
@@ -765,7 +764,7 @@ footer {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -776,8 +775,30 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover {
-  background: #5029bc;
+
+.or-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; 
+}
+
+.or-container hr {
+  flex: 1; 
+  border: none;
+  height: 1px; 
+  background-color: #ccc; 
+  margin: 0 10px; 
+}
+
+.or-container span {
+  padding: 0 10px; 
+  font-weight: bold;
+}
+
+
+.button input[type="submit"]:hover {
+  background: #0A2040;
 }
 
 /* figure css */
@@ -793,7 +814,7 @@ figure > * {
 }
 figure figcaption {
   display: grid;
-  align-items: start;
+  align-items: top;
   font-family: sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -808,9 +829,12 @@ figure figcaption {
 }
 figure:hover figcaption {
   --_i: 0%;
+  width: 250px;
+  overflow: hidden;
 }
 figure:hover img {
   transform: scale(1.2);
+  
 }
 @supports not (-webkit-mask-clip: text) {
   figure figcaption {
@@ -835,23 +859,34 @@ figure:hover img {
   align-items: center;
 }
 
+/* timeline css */
+
 .timeline {
   background-color: #bac0df;
   color: #0a2040;
   padding: 30px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.timeline ul {
+.timeline .exp-ul {
   list-style-type: none;
   border-left: 2px solid #094a68;
   padding: 10px 5px;
 }
+
 .timeline ul li {
-  position: relative;
+
   cursor: pointer;
   transition: 0.5s;
   padding: 10px;
 }
+
+.timeline .exp-ul .exp-li {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 20px 0px 0px 10px;
+}
+
 .timeline ul li span {
   display: inline-block;
   background-color: #466f9e;
@@ -904,8 +939,66 @@ figure:hover img {
 }
 
 .video-container {
-  padding-top: 30px;
+ 
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
+
+/* gallery page*/
+.gallery {
+min-height: 93vh;
+}
+
+
+.gallery .content {
+  padding: 20px;
+}
+
+.gallery .title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; 
+}
+
+.gallery-grid a {
+  display: block;
+}
+
+.gallery-grid img {
+  width: 100%; 
+  height: 220px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  transition: transform 0.2s; 
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05); 
+}
+
+
+.gallery-item {
+  text-align: center; 
+}
+
+.gallery-item h3 {
+  margin: 10px 0 5px; 
+  font-size: 18px; 
+}
+
+.gallery-item p {
+  font-size: 14px; 
+  color: #0e2431;
+}
+
+/* Responsive Media query */
 
 @media (max-width: 300px) {
   .timeline {
@@ -951,6 +1044,7 @@ figure:hover img {
     width: 100%;
     margin-left: 0;
   }
+
 }
 
 /* Responsive Media Query */
